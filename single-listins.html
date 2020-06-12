@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real Estate Home 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    
+</head>
+<body>
+	
+	<!-- navbar -->
+
+	<nav class="navbar navbar-default navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+		<div class="navbar-header d-flex">
+			<a class="navbar-brand" href="index.html">Logo<b>Name</b></a>  		
+		</div>
+			
+		<button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+			
+		<!-- Collection of nav links, forms, and other content for toggling -->
+		<div id="navbarCollapse" class="collapse navbar-collapse ">
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About</a></li>			
+				<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+				<!--<li class="nav-item dropdown">
+					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Featured<b class="caret"></b></a>
+					<ul class="dropdown-menu">					
+						<li><a href="#" class="dropdown-item">Featured 1</a></li>
+						<li><a href="#" class="dropdown-item">Featured 2</a></li>
+						<li><a href="#" class="dropdown-item">Featured 3</a></li>
+						<li><a href="#" class="dropdown-item">Featured 4</a></li>
+					</ul>
+				</li>-->
+				<li class="nav-item"><a href="listings.html" class="nav-link">Listings</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right ml-auto">			
+				<li class="nav-item">
+					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+					<ul class="dropdown-menu form-wrapper">					
+						<li>
+							<form action="/examples/actions/confirmation.php" method="post">
+								<p class="hint-text">Sign in with your social media account</p>
+								<div class="form-group social-btn clearfix">
+									<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+								<div class="or-seperator"><b>or</b></div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required="required">
+								</div>
+								<input type="submit" class="btn btn-primary btn-block" value="Login">
+								<div class="form-footer">
+									<a href="#">Forgot Your password?</a>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" data-toggle="dropdown" class="btn dropdown-toggle get-started-btn">Sign up</a>
+					<ul class="dropdown-menu form-wrapper">					
+						<li>
+							<form action="/examples/actions/confirmation.php" method="post">
+								<p class="hint-text">Fill in this form to create your account!</p>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+								</div>
+								<div class="form-group">
+									<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+								</div>
+								<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+							</form>
+						</li>
+					</ul>
+				</li>
+				<div class="btn-listing">
+					<a href="">Submit Listing</a>
+				</div>
+			</ul>
+		</div>
+		</div>
+	</nav>
+    
+    <!-- LISTINGS PAGE -->
+    
+    <section id="listings-page">
+        <div class="bg-listings-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="page-listings">
+                            <h4>Listings</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="listings-breadcrumb">
+                            <ul>
+                              <li><a href="index.html">Home</a></li>
+                                <li><span>/</span></li>
+                              <li>Some Place</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- LISTINGS PAGE SEARCH -->
+    
+    <section id="listings-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+						<form>
+							<div class="form-row">
+								<div class="form-group group-form col-lg-4 col-md-8 col-sm-6">
+									<input type="text" class="form-control form-field form-search" id="" placeholder="Search...">
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field form-cities">
+										<option>All Cities</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field">
+										<option>All States</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field">
+										<option>All Zipcodes</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-12">
+									<button type="submit" class="btn-search-listing">SEARCH</button>
+								</div>
+							 </div>
+						</form>
+				</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- GALLERY LISTINGS -->
+    
+    <section id="gallery-listings">
+        <div class="container">
+            <div class="row photos">
+                <div class="col-sm-6 col-md-6 col-lg-4 item padd-galleri-img">
+                    <a href="images/listing1.jpg" data-lightbox="photos">
+                        <div class="img-fluid" style="background-image: url(images/listing1.jpg);"></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 item padd-galleri-img">
+                    <a href="images/listing2.jpg" data-lightbox="photos">
+                        <div class="img-fluid" style="background-image: url(images/listing2.jpg);"></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 item padd-galleri-img">
+                    <a href="images/listing3.jpg" data-lightbox="photos">
+                        <div class="img-fluid" style="background-image: url(images/listing3.jpg);"></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 item padd-galleri-img">
+                    <a href="images/listing4.jpg" data-lightbox="photos">
+                        <div class="img-fluid" style="background-image: url(images/listing4.jpg);"></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 item padd-galleri-img">
+                    <a href="images/listing5.jpg" data-lightbox="photos">
+                        <div class="img-fluid" style="background-image: url(images/listing5.jpg);"></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 item padd-galleri-img">
+                    <a href="images/listing6.jpg" data-lightbox="photos">
+                        <div class="img-fluid" style="background-image: url(images/listing6.jpg);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SINGLE LISTING INFO -->
+    
+    <section id="listing-single-info">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-8 col-md-12 col-sm-12 ">
+                    <div class="border-listing">
+                        <div class="text-title-listing">
+                            <h3>House On Washington Ave</h3>
+                            <p>53 W 88th St, New York</p>
+                        </div>
+                        <div class="text-properti-single">
+                            <h4>$2000/week</h4>
+                            <ul>
+                                <li><p>Room</p><h6>3</h6></li>
+                                <li><p>Bed</p><h6>5</h6></li>
+                                <li><p>Bath</p><h6>3</h6></li>
+                                <li><p>Sq Ft</p><h6>250m2</h6></li>
+                                <li><p>Properti ID #</p><h6>111111</h6></li>
+                            </ul>
+                        </div>
+                        <div class="single-listing-nav">
+                            <ul>
+                                <li><p class="link-features">Features</p></li>
+                                <li><span>/</span></li>
+                                <li><p class="link-location">Location</p></li>
+                                <li><span>/</span></li>
+                                <li><p class="link-contact">Contact</p></li>
+                            </ul>
+                        </div>
+                        <div class="single-features">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet est, quis sollicitudin lectus. Suspendisse potenti. Vestibulum fermentum, est eget rutrum cursus, magna magna maximus sem, quis interdum quam odio eget nisi. Nullam dictum eros a molestie maximus. Donec auctor et justo sit amet congue.</p>
+                            <h4>Rental Information -</h4>
+                            <ul>
+                                <li><p>Check In</p><h6>2.00 PM</h6></li>
+                                <li><p>Check Out</p><h6>12.00 AM</h6></li>
+                                <li><p>Max Guest</p><h6>6</h6></li>
+                                <li><p>Min Stay</p><h6>7</h6></li>
+                            </ul>
+                            <h4>Price -</h4>
+                            <ul>
+                                <li><p>Extra People</p><h6>$5000</h6></li>
+                                <li><p>Cleaning Fee</p><h6>$10000</h6></li>
+                                <li><p>Cancellation Fee</p><h6>$50000</h6></li>
+                                <li><p>Security Deposit</p><h6>$100000</h6></li>
+                            </ul>
+                        </div>
+                        <div class="single-location">
+                            <h4>Map -</h4>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107865.78325456755!2d-86.3160773454111!3d32.34392463301615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888e8194b0d481f9%3A0x8e1b511d354285ff!2sMontgomery%2C%20AL%2C%20USA!5e0!3m2!1sen!2srs!4v1591865811991!5m2!1sen!2srs" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="single-contact">
+                            <h4>Request More Information -</h4>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group group-form col-lg-12 col-md-12 col-sm-12">
+                                        <select id="inputState" class="form-control form-single-cont form-more">
+                                            <option>Choose question</option>
+                                            <option>Tell me more about this property</option>
+                                            <option>Request a showing</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group group-form col-lg-12 col-md-12 col-sm-12">
+                                        <input type="text" class="form-control form-single-cont form-name" id="" placeholder="Full Name">
+                                    </div>
+                                    <div class="form-group group-form col-lg-12 col-md-12 col-sm-12">
+                                        <input type="email" class="form-control form-single-cont form-email" id="" placeholder="Email">
+                                    </div>
+                                    <div class="form-group group-form col-lg-12 col-md-12 col-sm-12">
+                                        <input type="text" class="form-control form-single-cont form-phone" id="" placeholder="Phone">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea name="message" class="form-control form-single-cont" style="min-height: 100px;" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group group-form col-lg-4 col-md-6 col-sm-12">
+                                        <button type="submit" class="btn-search-listing">SEND</button>
+                                    </div>
+                                 </div>
+                            </form>
+                        </div>
+                        <div class="person-listing">
+                            <h6>By: <span>Person Name</span></h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="border-listing marg-list-req">
+                        <div class="showing-listing">
+                            <h4>Request a Showing</h4>
+                            <form>
+                                    <div class="form-row">
+                                        <div class="form-group group-form col-lg-12 col-md-12 col-sm-12">
+                                            <input type="date" id="datepicker" placeholder="Select date" class="form-control form-single-cont form-date">
+                                        </div>
+                                        <div class="form-group group-form col-lg-5 col-md-5 col-sm-12">
+                                            <select id="inputState" class="form-control form-single-cont form-more">
+                                                <option>9:00 AM</option>
+                                                <option>9:30 AM</option>
+                                                <option>10:00 AM</option>
+                                                <option>10:30 AM</option>
+                                                <option>11:00 AM</option>
+                                                <option>11:30 AM</option>
+                                                <option>12:00 PM</option>
+                                                <option>12:30 PM</option>
+                                                <option>1:00 PM</option>
+                                                <option>1:30 PM</option>
+                                                <option>2 PM</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group group-form col-lg-2 col-md-2 col-sm-12 to-single">
+                                            <p>TO</p>
+                                        </div>
+                                        <div class="form-group group-form col-lg-5 col-md-5 col-sm-12">
+                                            <select id="inputState" class="form-control form-single-cont form-more">
+                                                <option>10:00 AM</option>
+                                                <option>10:30 AM</option>
+                                                <option>11:00 AM</option>
+                                                <option>11:30 AM</option>
+                                                <option>12:00 PM</option>
+                                                <option>12:30 PM</option>
+                                                <option>1:00 PM</option>
+                                                <option>1:30 PM</option>
+                                                <option>2:00 PM</option>
+                                                <option>2:30 PM</option>
+                                                <option>3 PM</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group group-form col-lg-12 col-md-6 col-sm-12">
+                                            <button type="submit" class="btn-search-listing">Request</button>
+                                        </div>
+                                     </div>
+                             </form>
+                        </div>  
+                    </div>
+                    
+                    <div class="border-listing marg-list-right">
+                        <div class="monthly-listing">
+                            <h4>Monthly Payment $</h4>
+                            <form>
+                                    <div class="form-row">
+                                        <div class="form-group group-form col-lg-12 col-md-12 col-sm-12 icon-input">
+                                            <i class="fa fa-usd"></i>
+                                            <input type="text" class="form-control form-single-cont form-dollar" id="" placeholder="Sale Price">
+                                        </div>
+                                        <div class="form-group group-form col-lg-12 col-md-12 col-sm-12 icon-input">
+                                            <i class="fa fa-percent"></i>
+                                            <input type="text" class="form-control form-single-cont form-percent" id="" placeholder="Interest Rate">
+                                        </div>
+                                        <div class="form-group group-form col-lg-12 col-md-12 col-sm-12">
+                                            <select id="inputState" class="form-control form-single-cont form-more">
+                                                <option>15 Years</option>
+                                                <option>20 Years</option>
+                                                <option>25 Years</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group group-form col-lg-12 col-md-12 col-sm-12 icon-input">
+                                            <i class="fa fa-usd"></i>
+                                            <input type="text" class="form-control form-single-cont form-down" id="" placeholder="Down Payment">
+                                        </div>
+                                        <div class="form-group group-form col-lg-12 col-md-6 col-sm-12">
+                                            <button type="submit" class="btn-search-listing">Calculate</button>
+                                        </div>
+                                     </div>
+                             </form>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!-- FOOTER -->
+	
+	<section id="footer">
+		<div class="bg-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Popular Search</h5>
+							<ul>
+								<li><a href="">Apartment for Rent</a></li>
+								<li><a href="">Apartment Low to hide</a></li>
+								<li><a href="">Offices for Buy</a></li>
+								<li><a href="">Offices for Rent</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Quick Links</h5>
+							<ul>
+								<li><a href="">Pricing Plans</a></li>
+								<li><a href="">Our Services</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Office</h5>
+							<p>Street name</p>
+							<p>Address is here</p>
+							<ul>
+								<li><a href="">office@realestate.com</a></li>
+								<li><a href="">+555/ 111-222</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Subscribe</h5>
+							<div class="form-row">
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<input type="text" class="form-control" id="footer-control" placeholder="Full Name">
+								</div>
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<input type="email" class="form-control" id="footer-control" placeholder="Email">
+								</div>
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<button type="submit" class="btn-subscribe">Subscribe</button>
+								</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy">
+						<p>© 2020 Real Estate, All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy icons">
+						<a href=""><i class="fa fa-facebook-square"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-twitter-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jscript.js"></script>
+
+
+
+</body>
+</html>

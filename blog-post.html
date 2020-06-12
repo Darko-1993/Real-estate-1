@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real Estate Home 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    
+</head>
+<body>
+	
+	<!-- navbar -->
+
+	<nav class="navbar navbar-default navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+		<div class="navbar-header d-flex">
+			<a class="navbar-brand" href="index.html">Logo<b>Name</b></a>  		
+		</div>
+			
+		<button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+			
+		<!-- Collection of nav links, forms, and other content for toggling -->
+		<div id="navbarCollapse" class="collapse navbar-collapse ">
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+				<!--<li class="nav-item dropdown">
+					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Featured<b class="caret"></b></a>
+					<ul class="dropdown-menu">					
+						<li><a href="#" class="dropdown-item">Featured 1</a></li>
+						<li><a href="#" class="dropdown-item">Featured 2</a></li>
+						<li><a href="#" class="dropdown-item">Featured 3</a></li>
+						<li><a href="#" class="dropdown-item">Featured 4</a></li>
+					</ul>
+				</li>-->
+				<li class="nav-item"><a href="listings.html" class="nav-link">Listings</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right ml-auto">			
+				<li class="nav-item">
+					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+					<ul class="dropdown-menu form-wrapper">					
+						<li>
+							<form action="/examples/actions/confirmation.php" method="post">
+								<p class="hint-text">Sign in with your social media account</p>
+								<div class="form-group social-btn clearfix">
+									<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+								<div class="or-seperator"><b>or</b></div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required="required">
+								</div>
+								<input type="submit" class="btn btn-primary btn-block" value="Login">
+								<div class="form-footer">
+									<a href="#">Forgot Your password?</a>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" data-toggle="dropdown" class="btn dropdown-toggle get-started-btn">Sign up</a>
+					<ul class="dropdown-menu form-wrapper">					
+						<li>
+							<form action="/examples/actions/confirmation.php" method="post">
+								<p class="hint-text">Fill in this form to create your account!</p>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+								</div>
+								<div class="form-group">
+									<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+								</div>
+								<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+							</form>
+						</li>
+					</ul>
+				</li>
+				<div class="btn-listing">
+					<a href="">Submit Listing</a>
+				</div>
+			</ul>
+		</div>
+		</div>
+	</nav>
+    
+    <!-- LISTINGS PAGE -->
+    
+    <section id="listings-page">
+        <div class="bg-listings-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="page-listings">
+                            <h4>Post</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="listings-breadcrumb">
+                            <ul>
+                              <li><a href="index.html">Home</a></li>
+                                <li><span>/</span></li>
+                              <li>Blog Post</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- LISTINGS PAGE SEARCH -->
+    
+    <section id="listings-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+						<form>
+							<div class="form-row">
+								<div class="form-group group-form col-lg-4 col-md-8 col-sm-6">
+									<input type="text" class="form-control form-field form-search" id="" placeholder="Search...">
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field form-cities">
+										<option>All Cities</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field">
+										<option>All States</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field">
+										<option>All Zipcodes</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-12">
+									<button type="submit" class="btn-search-listing">SEARCH</button>
+								</div>
+							 </div>
+						</form>
+				</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BLOG POST -->
+	
+    <section id="single-post">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="text-single-post">
+                        <h2>House with a big yard</h2>
+                        <h6>JAN 16, 2020 <span></span> 3 Comments <span></span> By: Admin</h6>
+                    </div>
+                    <div class="img-single-post" style="background-image: url(images/house1.jpg);"></div>
+                    <div class="text-single-post">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis consectetur orci. Integer eleifend pretium leo, at venenatis enim ultricies at. Duis nunc risus, faucibus sed ornare eget, viverra iaculis nibh. Phasellus a rutrum enim. Sed in vehicula nulla. In dictum nisi eget erat iaculis, eu mollis erat condimentum. In hac habitasse platea dictumst. Curabitur interdum, lacus sit amet fermentum molestie, lorem sapien sollicitudin lorem, nec blandit ipsum felis eu lectus. Sed convallis diam ipsum, et tristique odio pharetra nec. Nunc auctor risus tristique, fermentum sapien sit amet, tempus leo. Curabitur eget tempus nunc, et efficitur libero. Donec in orci porta, ultricies felis id, bibendum augue. Integer sodales lectus sem, eget porttitor risus sollicitudin eu.</p>
+                        <p>Donec venenatis pulvinar maximus. Vivamus finibus quam eget nisi faucibus, non elementum libero vestibulum. Nam in ex porta, convallis augue id, sagittis ante. Donec eros velit, porttitor ut consectetur volutpat, egestas vitae massa. Aenean ultrices posuere massa venenatis egestas. In semper placerat diam, vel luctus nibh fermentum placerat. Nunc nec dignissim nisl. Etiam eget vehicula eros. Proin eget convallis odio, vitae dignissim nisi. Curabitur tincidunt eros ac dui euismod tincidunt. Morbi sit amet dui quam. Donec ac risus id ex rutrum pulvinar vel vel neque. In et odio lacinia libero venenatis aliquam.</p>
+                        <p>Duis est mauris, bibendum a sollicitudin a, facilisis quis lacus. Donec vitae dolor sed arcu maximus porttitor. Vestibulum fringilla rhoncus dui id malesuada. Cras lectus purus, tempor sed ligula ut, pellentesque auctor lectus. Phasellus eleifend purus magna. Curabitur vel nisl a risus finibus tempor. Curabitur quam lorem, tincidunt vel neque eu, luctus pellentesque orci. Quisque porttitor imperdiet scelerisque. Sed molestie, turpis quis tempor dapibus, arcu turpis congue tellus, auctor faucibus mi lectus sed sapien. Donec sed consectetur nulla. Nullam non tellus nec purus hendrerit hendrerit. In pretium purus ut viverra rhoncus. Morbi pharetra nec dolor tempus molestie. Curabitur iaculis lacus ut ligula dictum suscipit. Nulla purus leo, hendrerit id ipsum vel, vulputate egestas urna.</p>
+                    </div>
+                    <div class="btn-single-post">
+                        <a href="" class="icon-face"><i class="fa fa-facebook"></i> Share on Facebook</a>
+                        <a href="" class="icon-tweet"><i class="fa fa-twitter"></i> Tweet</a>
+                        <a href="" class="icon-pint"><i class="fa fa-pinterest-p"></i> Pint In</a>
+                    </div>
+                    <div class="related-posts">
+                        <h4>Related posts</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="img-related-posts" style="background-image: url(images/house2.jpg);">
+                                    <p>MAY 18, 2020</p>
+                                </div>
+                                <div class="text-related-posts">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis consectetur orci. Integer eleifend pretium leo, at venenatis enim ultricies at. Duis nunc risus, faucibus sed ornare eget, viverra iaculis nibh. Phasellus a rutrum enim. Sed in vehicula nulla.</p>
+                                </div>
+                                <div class="btn-more-related">
+                                    <a href="blog-post.html">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 marg-rel-pos">
+                                <div class="img-related-posts" style="background-image: url(images/house3.jpg);">
+                                    <p>JUN 22, 2020</p>
+                                </div>
+                                <div class="text-related-posts">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis consectetur orci. Integer eleifend pretium leo, at venenatis enim ultricies at. Duis nunc risus, faucibus sed ornare eget, viverra iaculis nibh. Phasellus a rutrum enim. Sed in vehicula nulla.</p>
+                                </div>
+                                <div class="btn-more-related">
+                                    <a href="blog-post.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="about-us-post">
+                        <h4>About Us</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis consectetur orci. Integer eleifend pretium leo, at venenatis enim ultricies at.</p>
+                    </div>
+                    <div class="recent-posts">
+                        <h4>Recent Posts</h4>
+                        <ul>
+                            <li><a href="">House some post</a></li>
+                            <li><a href="">Apartment some post lorem</a></li>
+                            <li><a href="">Villa some post lorem ipsum</a></li>
+                            <li><a href="">Garage some post</a></li>
+                            <li><a href="">Construction some post lorem</a></li>
+                        </ul>
+                    </div>
+                    <div class="recent-comments">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="">Some comment post</a></li>
+                            <li><a href="">Comment some post</a></li>
+                            <li><a href="">Post comment some</a></li>
+                            <li><a href="">Some post comment</a></li>
+                            <li><a href="">Some comment post</a></li>
+                        </ul>
+                    </div>
+                    <div class="follow-us-post">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href=""><i class="fa fa-pinterest-square"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+	<!-- FOOTER -->
+	
+	<section id="footer">
+		<div class="bg-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Popular Search</h5>
+							<ul>
+								<li><a href="">Apartment for Rent</a></li>
+								<li><a href="">Apartment Low to hide</a></li>
+								<li><a href="">Offices for Buy</a></li>
+								<li><a href="">Offices for Rent</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Quick Links</h5>
+							<ul>
+								<li><a href="">Pricing Plans</a></li>
+								<li><a href="">Our Services</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Office</h5>
+							<p>Street name</p>
+							<p>Address is here</p>
+							<ul>
+								<li><a href="">office@realestate.com</a></li>
+								<li><a href="">+555/ 111-222</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Subscribe</h5>
+							<div class="form-row">
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<input type="text" class="form-control" id="footer-control" placeholder="Full Name">
+								</div>
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<input type="email" class="form-control" id="footer-control" placeholder="Email">
+								</div>
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<button type="submit" class="btn-subscribe">Subscribe</button>
+								</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy">
+						<p>© 2020 Real Estate, All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy icons">
+						<a href=""><i class="fa fa-facebook-square"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-twitter-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jscript.js"></script>
+
+
+
+</body>
+</html>

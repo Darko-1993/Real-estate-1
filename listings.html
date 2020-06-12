@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real Estate Home 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    
+</head>
+<body>
+	
+	<!-- navbar -->
+
+	<nav class="navbar navbar-default navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+		<div class="navbar-header d-flex">
+			<a class="navbar-brand" href="index.html">Logo<b>Name</b></a>  		
+		</div>
+			
+		<button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+			
+		<!-- Collection of nav links, forms, and other content for toggling -->
+		<div id="navbarCollapse" class="collapse navbar-collapse ">
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About</a></li>			
+				<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+				<!--<li class="nav-item dropdown">
+					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Featured<b class="caret"></b></a>
+					<ul class="dropdown-menu">					
+						<li><a href="#" class="dropdown-item">Featured 1</a></li>
+						<li><a href="#" class="dropdown-item">Featured 2</a></li>
+						<li><a href="#" class="dropdown-item">Featured 3</a></li>
+						<li><a href="#" class="dropdown-item">Featured 4</a></li>
+					</ul>
+				</li>-->
+				<li class="nav-item"><a href="listings.html" class="nav-link active-link">Listings</a></li>
+				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right ml-auto">			
+				<li class="nav-item">
+					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+					<ul class="dropdown-menu form-wrapper">					
+						<li>
+							<form action="/examples/actions/confirmation.php" method="post">
+								<p class="hint-text">Sign in with your social media account</p>
+								<div class="form-group social-btn clearfix">
+									<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+								</div>
+								<div class="or-seperator"><b>or</b></div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required="required">
+								</div>
+								<input type="submit" class="btn btn-primary btn-block" value="Login">
+								<div class="form-footer">
+									<a href="#">Forgot Your password?</a>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a href="#" data-toggle="dropdown" class="btn dropdown-toggle get-started-btn">Sign up</a>
+					<ul class="dropdown-menu form-wrapper">					
+						<li>
+							<form action="/examples/actions/confirmation.php" method="post">
+								<p class="hint-text">Fill in this form to create your account!</p>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Password" required="required">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+								</div>
+								<div class="form-group">
+									<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+								</div>
+								<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+							</form>
+						</li>
+					</ul>
+				</li>
+				<div class="btn-listing">
+					<a href="">Submit Listing</a>
+				</div>
+			</ul>
+		</div>
+		</div>
+	</nav>
+    
+    <!-- LISTINGS PAGE -->
+    
+    <section id="listings-page">
+        <div class="bg-listings-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="page-listings">
+                            <h4>OUR Listings</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="listings-breadcrumb">
+                            <ul>
+                              <li><a href="index.html">Home</a></li>
+                                <li><span>/</span></li>
+                              <li>Listings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- LISTINGS PAGE SEARCH -->
+    
+    <section id="listings-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+						<form>
+							<div class="form-row">
+								<div class="form-group group-form col-lg-4 col-md-8 col-sm-6">
+									<input type="text" class="form-control form-field form-search" id="" placeholder="Search...">
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field form-cities">
+										<option>All Cities</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field">
+										<option>All States</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-6">
+									<select id="inputState" class="form-control form-field">
+										<option>All Zipcodes</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group group-form col-lg-2 col-md-4 col-sm-12">
+									<button type="submit" class="btn-search-listing">SEARCH</button>
+								</div>
+							 </div>
+						</form>
+				</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- LISTINGS PAGE -->
+    
+    <section id="latest">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest1.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">House On Washington Ave</a></h5>
+							<p>53 W 88th St, New York</p>
+							<h6>Category: <span>Houses, Sales</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 3 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 250.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Maria Barlow</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest2.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">Luxury Villa In Rego Park</a></h5>
+							<p>88 Greenwich St #327, New York</p>
+							<h6>Category: <span>Villas, Rentals</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 5 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 7 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 350.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Janet Richmond</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest3.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">Family House In Hudson</a></h5>
+							<p>1244 E Street, Jersey City</p>
+							<h6>Category: <span>Houses, Sales</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 6 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 280.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Michael Rutter</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest1.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">House On Washington Ave</a></h5>
+							<p>53 W 88th St, New York</p>
+							<h6>Category: <span>Houses, Sales</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 3 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 250.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Maria Barlow</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest2.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">Luxury Villa In Rego Park</a></h5>
+							<p>88 Greenwich St #327, New York</p>
+							<h6>Category: <span>Villas, Rentals</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 5 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 7 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 350.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Janet Richmond</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest3.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">Family House In Hudson</a></h5>
+							<p>1244 E Street, Jersey City</p>
+							<h6>Category: <span>Houses, Sales</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 6 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 280.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Michael Rutter</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest1.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">House On Washington Ave</a></h5>
+							<p>53 W 88th St, New York</p>
+							<h6>Category: <span>Houses, Sales</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 3 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 250.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Maria Barlow</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest2.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">Luxury Villa In Rego Park</a></h5>
+							<p>88 Greenwich St #327, New York</p>
+							<h6>Category: <span>Villas, Rentals</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 5 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 7 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 350.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Janet Richmond</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
+					<div class="latest-box">
+						<div class="latest-img" style="background-image: url(images/latest3.jpg);"></div>
+						<div class="box-latest">
+							<h5><a href="single-listins.html">Family House In Hudson</a></h5>
+							<p>1244 E Street, Jersey City</p>
+							<h6>Category: <span>Houses, Sales</span></h6>
+							<ul>
+								<li><img src="images/icon1.png" alt="home"> 6 rooms</li>
+								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
+								<li><img src="images/icon3.png" alt="home"> 280.00 ft2</li>
+							</ul>
+							<hr>
+							<div class="property-name">
+								<p>Michael Rutter</p>
+							</div>
+							<div class="btn-latest">
+								<a href="single-listins.html">DETAILS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="pag" aria-label="Page navigation example">
+					  <ul class="pagination justify-content-center">
+						<li class="page-item">
+						  <a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						</li>
+						<li class="page-item"><a class="page-link active-item" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+						  <a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</li>
+					  </ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	<!-- FOOTER -->
+	
+	<section id="footer">
+		<div class="bg-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Popular Search</h5>
+							<ul>
+								<li><a href="">Apartment for Rent</a></li>
+								<li><a href="">Apartment Low to hide</a></li>
+								<li><a href="">Offices for Buy</a></li>
+								<li><a href="">Offices for Rent</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Quick Links</h5>
+							<ul>
+								<li><a href="">Pricing Plans</a></li>
+								<li><a href="">Our Services</a></li>
+								<li><a href="">About Us</a></li>
+								<li><a href="">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Office</h5>
+							<p>Street name</p>
+							<p>Address is here</p>
+							<ul>
+								<li><a href="">office@realestate.com</a></li>
+								<li><a href="">+555/ 111-222</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="text-footer">
+							<h5>Subscribe</h5>
+							<div class="form-row">
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<input type="text" class="form-control" id="footer-control" placeholder="Full Name">
+								</div>
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<input type="email" class="form-control" id="footer-control" placeholder="Email">
+								</div>
+								<div class="form-group form-footer col-lg-12 col-md-12 col-sm-12">
+									<button type="submit" class="btn-subscribe">Subscribe</button>
+								</div>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy">
+						<p>© 2020 Real Estate, All Rights Reserved</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="copy icons">
+						<a href=""><i class="fa fa-facebook-square"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-twitter-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jscript.js"></script>
+
+
+
+</body>
+</html>
