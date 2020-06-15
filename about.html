@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     
 </head>
-<body>
+<body onload="createCaptcha()">
 	
 	<!-- navbar -->
 
@@ -38,8 +38,8 @@
 		<div id="navbarCollapse" class="collapse navbar-collapse ">
 			<ul class="nav navbar-nav">
 				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>			
-				<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+				<li class="nav-item"><a href="about.html" class="nav-link active-link">About</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 				<!--<li class="nav-item dropdown">
 					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Featured<b class="caret"></b></a>
 					<ul class="dropdown-menu">					
@@ -49,7 +49,7 @@
 						<li><a href="#" class="dropdown-item">Featured 4</a></li>
 					</ul>
 				</li>-->
-				<li class="nav-item"><a href="listings.html" class="nav-link active-link">Listings</a></li>
+				<li class="nav-item"><a href="listings.html" class="nav-link">Listings</a></li>
 				<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 			</ul>
 			
@@ -118,7 +118,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="page-listings">
-                            <h2>OUR Listings</h2>
+                            <h2>About us</h2>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -126,7 +126,7 @@
                             <ul>
                               <li><a href="index.html">Home</a></li>
                                 <li><span>/</span></li>
-                              <li>Listings</li>
+                              <li>About Us</li>
                             </ul>
                         </div>
                     </div>
@@ -174,245 +174,87 @@
         </div>
     </section>
     
-    <!-- LISTINGS PAGE -->
+    <!-- ABOUT -->
     
-    <section id="latest">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest1.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">House On Washington Ave</a></h5>
-							<p>53 W 88th St, New York</p>
-							<h6>Category: <span>Houses, Sales</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 3 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 250.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Maria Barlow</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest2.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">Luxury Villa In Rego Park</a></h5>
-							<p>88 Greenwich St #327, New York</p>
-							<h6>Category: <span>Villas, Rentals</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 5 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 7 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 350.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Janet Richmond</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest3.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">Family House In Hudson</a></h5>
-							<p>1244 E Street, Jersey City</p>
-							<h6>Category: <span>Houses, Sales</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 6 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 280.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Michael Rutter</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest1.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">House On Washington Ave</a></h5>
-							<p>53 W 88th St, New York</p>
-							<h6>Category: <span>Houses, Sales</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 3 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 250.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Maria Barlow</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest2.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">Luxury Villa In Rego Park</a></h5>
-							<p>88 Greenwich St #327, New York</p>
-							<h6>Category: <span>Villas, Rentals</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 5 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 7 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 350.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Janet Richmond</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest3.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">Family House In Hudson</a></h5>
-							<p>1244 E Street, Jersey City</p>
-							<h6>Category: <span>Houses, Sales</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 6 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 280.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Michael Rutter</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-                
-                <div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest1.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">House On Washington Ave</a></h5>
-							<p>53 W 88th St, New York</p>
-							<h6>Category: <span>Houses, Sales</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 3 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 250.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Maria Barlow</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest2.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">Luxury Villa In Rego Park</a></h5>
-							<p>88 Greenwich St #327, New York</p>
-							<h6>Category: <span>Villas, Rentals</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 5 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 7 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 350.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Janet Richmond</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-12 padd-listings-page">
-					<div class="latest-box">
-						<div class="latest-img" style="background-image: url(images/latest3.jpg);"></div>
-						<div class="box-latest">
-							<h5><a href="single-listins.html">Family House In Hudson</a></h5>
-							<p>1244 E Street, Jersey City</p>
-							<h6>Category: <span>Houses, Sales</span></h6>
-							<ul>
-								<li><img src="images/icon1.png" alt="home"> 6 rooms</li>
-								<li><img src="images/icon2.png" alt="home"> 5 beds</li>
-								<li><img src="images/icon3.png" alt="home"> 280.00 ft2</li>
-							</ul>
-							<hr>
-							<div class="property-name">
-								<p>Michael Rutter</p>
-							</div>
-							<div class="btn-latest">
-								<a href="single-listins.html">DETAILS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="pag" aria-label="Page navigation example">
-					  <ul class="pagination justify-content-center">
-						<li class="page-item">
-						  <a class="page-link" href="#" aria-label="Previous">
-							<span aria-hidden="true">&laquo;</span>
-							<span class="sr-only">Previous</span>
-						  </a>
-						</li>
-						<li class="page-item"><a class="page-link active-item" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item">
-						  <a class="page-link" href="#" aria-label="Next">
-							<span aria-hidden="true">&raquo;</span>
-							<span class="sr-only">Next</span>
-						  </a>
-						</li>
-					  </ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	
+    <section id="about-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="text-about-page">
+                        <h2>Why Choose Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nisl ut sapien pulvinar dapibus sed ut libero. Fusce vitae bibendum ligula. Ut elementum suscipit rutrum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nisl ut sapien pulvinar dapibus sed ut libero. Fusce vitae bibendum ligula. Ut elementum suscipit rutrum. Donec bibendum turpis ac mi blandit mattis. In vulputate metus tellus, eu auctor metus sagittis dictum. Mauris mauris justo, laoreet nec ullamcorper vel, tincidunt vitae velit. Sed ornare porttitor rhoncus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel nisl ut sapien pulvinar dapibus sed ut libero. Fusce vitae bibendum ligula. Ut elementum suscipit rutrum. Donec bibendum turpis ac mi blandit mattis. In vulputate metus tellus, eu auctor metus sagittis dictum. Mauris mauris justo, laoreet nec ullamcorper vel, tincidunt vitae velit. Sed ornare porttitor rhoncus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="img-about-page">
+                        <div class="bg-img-about-page">
+                            <div class="img-text-page">
+                                <p>150</p>
+                                <h6>Avtive listings</h6>
+                            </div>
+                            <hr>
+                            <div class="img-text-page">
+                                <p>$700 Million</p>
+                                <h6>In sales</h6>
+                            </div>
+                            <hr>
+                            <div class="img-text-page">
+                                <p>450</p>
+                                <h6>And more clients</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- BECOME -->
+    
+    <section id="become">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-become">
+                        <h2>Become a Real Estate Agent</h2>
+                        <p>We only work with the best companies around the globe</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="btn-become">
+                        <a href="">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PARTNERS -->
+    
+    <section id="partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="text-partners">
+                        <h2>Our Partners</h2>
+                        <p>We only work with the best companies around the globe</p>
+                    </div>
+                    <div class="icons-partners">
+                        <ul>
+                            <li><img src="images/par1.png" alt="par-1"/></li>
+                            <li><img src="images/par2.png" alt="par-2"/></li>
+                            <li><img src="images/par3.png" alt="par-3"/></li>
+                            <li><img src="images/par4.png" alt="par-4"/></li>
+                            <li><img src="images/par5.png" alt="par-5"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 	<!-- FOOTER -->
 	
 	<section id="footer">

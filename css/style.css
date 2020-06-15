@@ -9,6 +9,10 @@ html,body{
 	height: auto;
 } 
 
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*** NAVBAR ***/
 
 .form-control {
@@ -1517,7 +1521,7 @@ footer{
     
 }
 
-.page-listings h4{
+.page-listings h2{
     margin-bottom: 0;
     padding: 10px 0;
     color: white;
@@ -1528,6 +1532,7 @@ footer{
 
 .listings-breadcrumb{
     text-align: right;
+    padding: 10px 0;
 }
 
 .listings-breadcrumb ul{
@@ -1854,7 +1859,7 @@ footer{
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .page-listings h4{
+    .page-listings h2{
         text-align: center;
     }
     .listings-breadcrumb ul{
@@ -1866,7 +1871,7 @@ footer{
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
-    .page-listings h4{
+    .page-listings h2{
         text-align: center;
     }
     .listings-breadcrumb ul{
@@ -1887,7 +1892,7 @@ footer{
 }
 
 @media (max-width: 320px) {
-    .page-listings h4{
+    .page-listings h2{
         text-align: center;
     }
     .bg-listings-page{
@@ -2476,6 +2481,234 @@ footer{
     }
     .form-contact h2{
         font-size: 30px;
+    }
+}
+
+/* ABOUT PAGE */
+
+#about-page{
+    padding: 80px 0;
+}
+
+.text-about-page{
+    
+}
+
+.text-about-page h2{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.text-about-page p{
+    font-size: 18px;
+}
+
+.text-about-page p:first-of-type{
+    font-weight: 600;
+    color: #bfbfbf;
+}
+
+.img-about-page{
+    background-image: url(..//images/listing5.jpg);
+    width: 100%;
+    min-height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.bg-img-about-page{
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    min-height: inherit;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-text-page{
+    text-align: center;
+}
+
+.img-text-page p{
+    margin-bottom: 0;
+    font-size: 35px;
+    color: #03b5c3;
+}
+
+.img-text-page h6{
+    letter-spacing: 1px;
+}
+
+/* BECOME */
+
+#become{
+    background-color: #03b5c3;
+    padding: 40px 0;
+}
+
+.text-become{
+    
+}
+
+.text-become h2{
+    letter-spacing: 1px;
+    color: white;
+}
+
+.text-become p{
+    font-size: 18px;
+    color: white;
+}
+
+.btn-become{
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.btn-become a{
+	text-decoration: none;
+	color: #03b5c3;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	background-color: white;
+	border-radius: 4px;
+	border: 2px solid white;
+	padding: 15px 25px; 
+}
+
+.btn-become a:hover{
+	text-decoration: none;
+	color: white;
+	border: 2px solid white;
+	background-color: transparent;
+}
+
+/* PARTNERS */
+
+#partners{
+    padding: 80px 0;
+}
+
+.text-partners h2{
+    letter-spacing: 1px;
+}
+
+.text-partners p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.icons-partners ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icons-partners ul li{
+    flex: 20%;
+}
+
+/* RESPONSIVE ABOUT */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-about-page{
+        min-height: 350px;
+        margin-top: 30px;
+    }
+    .text-become{
+        text-align: center;
+    }
+    .btn-become{
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .img-about-page{
+        min-height: 350px;
+        margin-top: 30px;
+    }
+    .text-become{
+        text-align: center;
+    }
+    .btn-become{
+        text-align: center;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    #about-page{
+        padding: 40px 0;
+    }
+    .text-about-page h2{
+        font-size: 30px;
+    }
+    .img-about-page{
+        min-height: 350px;
+        margin-top: 30px;
+    }
+    .text-become{
+        text-align: center;
+    }
+    .btn-become{
+        text-align: center;
+    }
+    .text-become h2{
+        font-size: 30px;
+    }
+    #partners{
+        padding: 40px 0;
+    }
+    .text-partners h2{
+        font-size: 30px;
+    }
+    .icons-partners ul li{
+        flex: 50%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    #about-page{
+        padding: 40px 0;
+    }
+    .text-about-page h2{
+        font-size: 30px;
+    }
+    .img-about-page{
+        min-height: 350px;
+        margin-top: 30px;
+    }
+    .text-become{
+        text-align: center;
+    }
+    .btn-become{
+        text-align: center;
+    }
+    .text-become h2{
+        font-size: 30px;
+    }
+    #partners{
+        padding: 40px 0;
+    }
+    .text-partners h2{
+        font-size: 30px;
+    }
+    .icons-partners ul li{
+        flex: 50%;
+        margin: 10px 0;
     }
 }
 
